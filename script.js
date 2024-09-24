@@ -49,3 +49,13 @@ function calculateSignificantFigures() {
   document.getElementById("significantCount").innerText = significantFigures;
   document.getElementById("significantDigits").innerText = significantDigits.join(', ');
 }
+
+function toggleRules() {
+    const rulesContent = document.getElementById("rulesContent");
+    if (rulesContent.style.display === "none" || rulesContent.style.display === "") {
+        rulesContent.style.display = "block"; // Show the content
+    } else {
+        rulesContent.style.display = "none"; // Hide the content
+    }
+}
+

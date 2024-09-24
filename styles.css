@@ -9,9 +9,9 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column; /* Allow footer to stay at the bottom */
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  min-height: 100vh; /* Ensure body takes up at least full height */
 }
 
 .container {
@@ -20,34 +20,38 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 90%; /* Full width on small screens */
-  max-width: 400px; /* Max width for larger screens */
+  width: 95%; /* Increased width for better visibility on larger screens */
+  max-width: 500px; /* Increased max width for larger screens */
+  margin: 20px; /* Ensure margin at the top */
 }
 
 h1 {
   color: #333;
   margin-bottom: 20px;
-  font-size: 1.5em; /* Responsive font size */
+  font-size: 2em; /* Increased font size */
 }
 
-input[type="number"] {
+input[type="text"] {
   width: 100%; /* Full width for input */
-  padding: 10px;
+  height: 60px; /* Fixed height for input */
+  padding: 15px; /* Increased padding for input */
   margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 1em; /* Responsive font size */
+  font-size: 1.2em; /* Increased font size */
 }
 
 button {
-  padding: 10px 20px;
+  height: 60px; /* Fixed height for button */
+  padding: 15px 20px; /* Increased padding for button */
   background-color: #28a745;
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1em; /* Responsive font size */
+  font-size: 1.2em; /* Increased font size */
   transition: background-color 0.3s; /* Smooth background change */
+  width: 100%; /* Full width for button */
 }
 
 button:hover {
@@ -69,33 +73,44 @@ button:hover {
   text-align: left; /* Align text to the left for better readability */
 }
 
-#rules h2 {
-  color: #333;
-  font-size: 1.3em; /* Responsive font size for rules */
+.toggle-button {
+  background-color: #007bff; /* Button color for dropdown */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px; /* Increased padding */
+  cursor: pointer;
+  width: 100%; /* Full width for dropdown button */
+  margin-bottom: 10px;
+  font-size: 1.2em; /* Increased font size */
 }
 
-#rules ul {
+.rules-content {
+  display: none; /* Initially hidden */
+  border: 1px solid #ccc; /* Border around the content */
+  border-radius: 5px;
+  padding: 10px; /* Padding for the content */
+}
+
+.rules-content ul {
   list-style-type: none; /* Remove bullet points */
   padding: 0; /* Remove padding */
 }
 
-#rules li {
+.rules-content li {
   margin: 10px 0; /* Space between rules */
 }
 
 /* Footer Styling */
 footer {
   margin-top: 20px;
-  font-size: 0.9em; /* Slightly smaller font size */
+  font-size: 1em; /* Increased font size */
   color: #555;
 }
 
 /* Media Queries for Responsiveness */
 @media (max-width: 600px) {
   h1 {
-      font-size: 1.3em; /* Smaller font size for mobile */
-  }
-  button {
-      width: 100%; /* Full width for button on small screens */
+      font-size: 1.5em; /* Smaller font size for mobile */
   }
 }
