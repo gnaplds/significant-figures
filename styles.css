@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%; /* Full width on small screens */
+  max-width: 400px; /* Max width for larger screens */
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.5em; /* Responsive font size */
+}
+
+input[type="text"] {
+  width: 100%; /* Full width for input */
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em; /* Responsive font size */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em; /* Responsive font size */
+  transition: background-color 0.3s; /* Smooth background change */
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+#result {
+  margin-top: 20px;
+}
+
+#significantCount, #significantDigits {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+  h1 {
+      font-size: 1.3em; /* Smaller font size for mobile */
+  }
+  button {
+      width: 100%; /* Full width for button on small screens */
+  }
+}
