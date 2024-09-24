@@ -8,6 +8,7 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-direction: column; /* Allow footer to stay at the bottom */
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -29,7 +30,7 @@ h1 {
   font-size: 1.5em; /* Responsive font size */
 }
 
-input[type="text"] {
+input[type="number"] {
   width: 100%; /* Full width for input */
   padding: 10px;
   margin-bottom: 20px;
@@ -60,6 +61,33 @@ button:hover {
 #significantCount, #significantDigits {
   font-weight: bold;
   color: #333;
+}
+
+/* Rules Section Styling */
+#rules {
+  margin-top: 30px; /* Space above the rules section */
+  text-align: left; /* Align text to the left for better readability */
+}
+
+#rules h2 {
+  color: #333;
+  font-size: 1.3em; /* Responsive font size for rules */
+}
+
+#rules ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+}
+
+#rules li {
+  margin: 10px 0; /* Space between rules */
+}
+
+/* Footer Styling */
+footer {
+  margin-top: 20px;
+  font-size: 0.9em; /* Slightly smaller font size */
+  color: #555;
 }
 
 /* Media Queries for Responsiveness */

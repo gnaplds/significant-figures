@@ -20,6 +20,25 @@
         <p>Significant digits: <span id="significantDigits"></span></p>
     </div>
 
+    <div id="rules">
+      <h2>Rules for Counting Significant Figures</h2>
+      <ul>
+          <li><strong>Non-zero digits:</strong> All non-zero digits are significant.</li>
+          <li><strong>Leading zeros:</strong> Zeros before the first non-zero digit are not significant. <br>
+              Example: 0.0025 has two significant figures (2 and 5).
+          </li>
+          <li><strong>Captive zeros:</strong> Zeros between non-zero digits are significant. <br>
+              Example: 105 has three significant figures (1, 0, and 5).
+          </li>
+          <li><strong>Trailing zeros:</strong> Zeros to the right of a decimal point and after a non-zero digit are significant. <br>
+              Example: 3.00 has three significant figures (3, 0, and 0).
+          </li>
+          <li><strong>Trailing zeros in whole numbers:</strong> Are significant only if there is a decimal point. <br>
+              Example: 1500 has two significant figures, but 1500. has four significant figures.
+          </li>
+        </ul>
+    </div>
+
     <footer>
       <p>Made by Gene Apiladas</p>
     </footer>
