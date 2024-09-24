@@ -12,13 +12,18 @@
 <body>
   <div class="container">
     <h1>Significant Figures Calculator</h1>
-    <input type="text" id="inputNumber" placeholder="Enter a number">
+    <input type="text" id="inputNumber" placeholder="Enter a number" inputmode="numeric" required>
     <button onclick="calculateSignificantFigures()">Calculate</button>
 
     <div id="result">
         <p>Number of significant figures: <span id="significantCount">0</span></p>
         <p>Significant digits: <span id="significantDigits"></span></p>
     </div>
+
+    <footer>
+      <p>Made by Gene Apiladas</p>
+    </footer>
+    
 </div>
 </body>
 </html>
